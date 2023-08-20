@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1px;
+}
+html body {
+  font-size: 16rem;
+  color: white;
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html body header {
+  background-color: #21204A;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+html body header span {
+  font-size: 28rem;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+html body header nav {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body header nav .nav-link {
+  text-decoration: none;
+  color: #a6b8cf;
+}
+html body header nav .connect-wallet-btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}/*# sourceMappingURL=collectionDetail.css.map */

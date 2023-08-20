@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1px;
+}
+html body {
+  font-size: 16rem;
+  color: white;
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html body header {
+  background-color: #21204A;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+html body header span {
+  font-size: 28rem;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+html body header nav {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body header nav .nav-link {
+  text-decoration: none;
+  color: #a6b8cf;
+}
+html body header nav .connect-wallet-btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+html body footer {
+  background-color: #21204A;
+  padding: 50px 100px;
+  display: flex;
+  height: 373px;
+}
+html body footer .footer-left {
+  width: 40%;
+}
+html body footer .footer-left div span {
+  font-size: 28rem;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+html body footer .footer-left div a {
+  color: white;
+  font-size: 25rem;
+  text-decoration: none;
+}
+html body footer .footer-left p {
+  padding: 0 150px 0 0;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #a6b8cf;
+}
+html body footer .footer-right {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+html body footer .footer-right ul {
+  list-style: none;
+}
+html body footer .footer-right ul li {
+  padding: 10px 0;
+}
+html body footer .footer-right ul li .footer-nav-links {
+  color: #a6b8cf;
+  text-decoration: none;
+}
+html body footer .footer-right .newsletter-section form {
+  position: relative;
+  height: 44px;
+  width: 356px;
+  margin: 30px 0 60px;
+}
+html body footer .footer-right .newsletter-section form input {
+  position: absolute;
+  width: 356px;
+  height: 44px;
+  border-radius: 10px;
+  border: 0px solid;
+  background-color: #7d7c80;
+  color: white;
+  padding: 0 10px;
+}
+html body footer .footer-right .newsletter-section form input::-moz-placeholder {
+  color: white;
+}
+html body footer .footer-right .newsletter-section form input::placeholder {
+  color: white;
+}
+html body footer .footer-right .newsletter-section form .subscribe-btn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  border-radius: 10px;
+  border: 0;
+  height: 38px;
+  padding: 0 30px;
+  font-size: 18rem;
+  background-color: #CDE2FE;
+}
+html body footer .footer-right .newsletter-section span h3 {
+  margin-bottom: 30px;
+}
+html body footer .footer-right .newsletter-section span i {
+  margin: 0 8px 0 0;
+  font-size: 25px;
+}/*# sourceMappingURL=errorpage.css.map */

@@ -1,0 +1,383 @@
+//reset css
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$bg-color: #21204A;
+$font-color: white;
+$font-color2: #a6b8cf;
+$main-bg-color: #e0e9f0;
+$inside-flex-item-bg-color:#f0f4f7;
+$font-type: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+html {
+    font-size: 1px;
+
+    body {
+        font-size: 16rem;
+        color: $font-color;
+        font-family: $font-type;
+
+        header {
+            background-color: $bg-color;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+
+            span {
+                font-size: 28rem;
+                font-weight: bold;
+                border: 3px solid white;
+                border-radius: 10px;
+                padding: 0 10px;
+            }
+
+            nav {
+                // border: 1px solid white;
+                width: 900px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .nav-link {
+                    text-decoration: none;
+                    color: $font-color2;
+                }
+
+                .connect-wallet-btn {
+                    border: 2px solid white;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        main {
+            background-color: $main-bg-color;
+
+            .hero-section {
+                background-color: $bg-color;
+                height: calc(100vh - 80px);
+                padding: 0 100px;
+                display: flex;
+
+                .hero-left {
+                    width: 45%;
+                    padding: 100px 0;
+
+                    h1 {
+                        font-size: 45rem;
+                        line-height: 60px;
+                    }
+
+                    p {
+                        margin: 30px 0 80px;
+                        color: $font-color2;
+                    }
+
+                    .hero-btn {
+                        text-decoration: none;
+                        color: white;
+                        padding: 10px 5px 10px 15px;
+                        border-radius: 10px;
+                        background-image: linear-gradient(to right, #F53DF5, #0698F9);
+
+                        .fa-arrow-right {
+                            padding: 9px;
+                            border-radius: 5px;
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+
+                .hero-right {
+                    width: 55%;
+                    position: relative;
+
+                    .hero-stickers-1 {
+                        position: absolute;
+                        left: -30px;
+                    }
+
+                    .hero-stickers-2 {
+                        position: absolute;
+                        right: 10px;
+                    }
+
+                    .hero-stickers-3 {
+                        position: absolute;
+                        right: 0;
+                        bottom: -70px;
+                    }
+
+                    .hero-right-img {
+
+                        .collection-name {
+                            bottom: 130px;
+                            left: 70px;
+                            z-index: 2;
+                            position: absolute;
+                            transform: rotate(33deg);
+
+                            p {
+                                color: #BDCADB;
+                            }
+                        }
+
+                        .hero-img {
+                            position: absolute;
+                            // border: 1px solid white;
+                            top: 150px;
+                        }
+
+                        .hero-price {
+                            bottom: -30px;
+                            left: 10px;
+                            z-index: 2;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            .hot-auction{
+                color: black;
+                padding: 100px;
+
+                .hot-auction-title-row{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .hot-auction-title-left{
+                        display: flex;
+                        width: 50%;
+                        // border: 1px solid red;
+
+                        h1{
+                            background-image: linear-gradient(to right, #F53DF5, #0698F9);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            margin-right: 40px;
+                        }
+                        select{
+                            // width: x;
+                            padding: 0 10px;
+                            background-color: #b5d5ff;
+                            border: 0;
+                            border-radius: 10px;
+
+                            option{
+                                background-color: $main-bg-color;
+                                font-size: 17rem;
+                                padding: 10px 0;
+                            }
+                        }
+                    }
+                    .hot-auction-title-right{
+                        width: 50%;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        .auction-see-all-link{
+                            border: 3px solid $font-color2;
+                            padding: 5px 20px;
+                            border-radius: 10px;
+                            text-decoration: none;
+                            color: $font-color2;
+                            margin-right: 30px;
+                        }
+                        button{
+                            padding: 10px;
+                            border: 2px solid $font-color2;
+                            border-radius: 10px;
+                            color: $font-color2;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .hot-auction-flex-container{
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .hot-auction-flex-items{
+                        padding: 10px;
+                        background-color:$inside-flex-item-bg-color;
+                        border-radius:20px ;
+
+                        .hot-section-img{
+                            border-radius: 20px;
+                        }
+                        .collection-name{
+                            p{
+                                color: $font-color2;
+                                font-size: 14rem;
+                            }
+                            h3{
+                                font-size: 15rem;
+                            }
+                        }
+
+                        .current-bid{
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 15px 0;
+
+                            p{
+                                color: $font-color2;
+                                font-size: 14rem;
+                            }
+                            h4{
+                                font-size: 15rem;
+                            }
+                            h5{
+                                color: $font-color2;
+                                font-size: 14rem;
+                                font-weight: 200;
+                            }
+                        }
+
+                        .profile-avatar{
+                            display: flex;
+                            justify-content: space-between;
+                            border-top: 2px solid ;
+                            border-image: linear-gradient(to right, #3918FF, #DB00FF);
+                            border-image-slice: 1;
+                            padding: 10px 0; 
+
+                            .profile-avatar-left{
+                                display: flex;
+                                align-items: center;
+                                
+                                p{
+                                    color: $font-color2;
+                                    margin-left: 10px;
+                                }
+                            }
+                            .profile-avatar-right{
+                                display: flex;
+                                align-items: center;
+
+                                i{
+                                    font-size: 25rem;
+                                    background-image: linear-gradient(to right, #F53DF5, #0698F9);
+                                    background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                }
+                                p{
+                                    letter-spacing: 0;
+                                    font-size: 14rem;
+                                    color: $font-color2;
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer{
+            background-color: $bg-color;
+            padding: 50px 100px;
+            display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            height: 373px;
+
+            .footer-left{
+                width: 40%;
+                div{
+                    span {
+                        font-size: 28rem;
+                        font-weight: bold;
+                        border: 3px solid white;
+                        border-radius: 10px;
+                        padding: 0 10px;
+                        margin-right: 20px;
+                    }
+                    a{
+                        color: $font-color;
+                        font-size: 25rem;
+                        text-decoration: none;
+                    }
+                }
+                p{
+                    padding: 0 150px 0 0;
+                    margin-top: 30px;
+                    font-size: 15px;
+                    color: $font-color2;
+                }
+            }
+            .footer-right{
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+
+                ul{
+                    list-style: none;
+
+                    li{
+                        padding: 10px 0;
+
+                        .footer-nav-links{
+                            color: $font-color2;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .newsletter-section{
+
+                    form{
+                        position:relative;
+                        height: 44px;
+                        width: 356px;
+                        margin: 30px 0 60px;
+
+                        input{
+                            position: absolute;
+                            width: 356px;
+                            height: 44px;
+                            border-radius: 10px;
+                            border: 0px solid ;
+                            background-color: #7d7c80;
+                            color: $font-color;
+                            padding: 0 10px;
+
+                            &::placeholder{
+                                color: $font-color;
+                            }
+                        }
+                        .subscribe-btn{
+                            position: absolute;
+                            right: 3px;
+                            top: 3px;
+                            border-radius: 10px;
+                            border: 0;
+                            height: 38px;
+                            padding: 0 30px;
+                            font-size: 18rem;
+                            background-color: #CDE2FE;
+                        }
+                    }
+                    span{
+                        h3{
+                            margin-bottom: 30px;
+                        }
+                        i{
+                            margin: 0 8px 0 0;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
