@@ -19,9 +19,8 @@ html {
     font-size: 1px;
 
     body {
+        font-family: 'poppins', sans-serif;
         font-size: 16rem;
-        color: $font-color;
-        font-family: $font-type;
         background-color: #F0F4FF;
 
         header {
@@ -60,23 +59,23 @@ html {
             }
         }
         main {
+            max-width: 1440px;
             .hero {
-                font-family: $font-type;
                 display: flex;
                 .hero-left {
-                    width: 50%;
-                    margin: 80px 0 0 110px;
+                    width: 60%;
+                    margin: 80px 0 0 80px;
                     .hero-img-bckgrnd {
-                        width: 100vh;
-                        height: 80vh;
+                        width: 50vw;
+                        height: 90vh;
                         border-radius: 15px;
                         background-color: #ffffff;
                         .hero-img {
                             width: 610px;
-                            height: 500px;
+                            height: 508px;
                             position: relative;
-                            left: 22px;
-                            top: 12px;
+                            left: 32px;
+                            top: 18px;
                         }
                     }
                     .hero-time {
@@ -84,12 +83,13 @@ html {
                         height: 44px;
                         display: flex;
                         position: relative;
-                        left: 246px;
-                        bottom: 80px;
+                        left: 248px;
+                        bottom: 160px;
                         background-color: rgba(0, 0, 0, 0.479);
                         border-radius: 10px;
                         font-size: 14px;
                         padding: 10px 14px;
+                        color: #ffffff;
                         .hero-time-two {
                             padding: 4px 4px;
                         }
@@ -118,7 +118,7 @@ html {
 
                     }
                     .list-names {
-                        width: 100vh;
+                        width: 50vw;
                         height: 500px;
                         margin: 28px 0;
                         display: flex;
@@ -151,7 +151,7 @@ html {
                             width: 64px;
                             height: 25px;
                             position: relative;
-                            left: 380px;
+                            left: 340px;
                             top: 16px;
                             border-radius: 6px;
                             border: 1px solid gray;
@@ -160,7 +160,7 @@ html {
                             width: 64px;
                             height: 25px;
                             position: relative;
-                            left: 400px;
+                            left: 360px;
                             top: 16px;
                             border-radius: 6px;
                             border: 1px solid gray;
@@ -259,24 +259,25 @@ html {
                         align-items: center;
                         border-radius: 10px;
                         position: relative;
-                        bottom: 120px;
+                        bottom: 122px;
+                        margin: 10px;
                         .price-btn-one {
-                            width: 360px;
+                            width: 364px;
                             height: 40px;
                             font-size: 14px;
                             color: #ffffff;
                             background: linear-gradient(60deg, #f906f9, #0698f9);
                             border-radius: 10px;
-                            margin: 10px;
                             border: none;
                         }
                         .price-btn-two {
-                            width: 360px;
+                            width: 364px;
                             height: 40px;
                             color: black;
                             margin: 6px;
                             border-radius: 10px;
                             border: none;
+                            font-size: 18px;
                         }
                     }
                     .chart {
@@ -342,7 +343,7 @@ html {
                 justify-content: space-between;
                 font-size: 30px;
                 color: black;
-                padding: 18px 110px;
+                padding: 18px 80px;
                 .collection-btn {
                     .btn-one {
                         width: 100px;
@@ -362,65 +363,76 @@ html {
                 }
               }
               .collection-down {
+                  width: 100vw;
+                  height: 560px;
                   display: flex;
                   justify-content: space-evenly;
-                  width: 100%;
                   .collection-images {
-                      width: 250px;
+                      width: 240px;
                       height: 440px;
                       background-color: #ffffff;
-                      border-radius: 8px;
-                      margin: 10px;
-                  }
-                  .collection-img {
-                      width: 220px;
-                      height: 240px;
-                      padding: 10px;
-                      margin-left: 12px;
-                    }
-                    .border {
-                      border-radius: 25px;
-                    }
-                    .collection-ptag {
-                        color: #6e84ab;
-                        font-size: 10px;
-                        padding-top: 12px;
-                        margin-left: 16px;
-                    }
-                    .collection-h5 {
-                        color: black;
-                        font-weight: 400px;
-                        font-size: 14px;
-                        padding-top: 6px;
-                        margin-left: 16px;
-                    }
-                    .collection-price {
-                        width: 200px;
-                        height: 65px;
-                        padding: 4px;
-                        margin: 14px;
-                        border-radius: 6px;
-                        background-color: black;
-                        font-size: 10px;
-                        .collection-p {
-                            display: flex;
+                      border-radius: 12px;
+                      margin: 6px;
+                      .collection-img {
+                          width: 230px;
+                          height: 280px;
+                          padding: 12px;
+                          margin-left: 4px;
                         }
-                        .collection-eth {
-                            display: flex;
+                        .border {
+                          border-radius: 24px;
                         }
-                        .cprice {
-                            display: flex;
-                            .cprice-time {
+                        .collection-ptag {
+                            color: #6e84ab;
+                            font-size: 12px;
+                            padding-top: 12px;
+                            margin-left: 16px;
+                        }
+                        .collection-h5 {
+                            color: black;
+                            font-weight: 400px;
+                            font-size: 16px;
+                            padding-top: 6px;
+                            margin-left: 16px;
+                        }
+                        .collection-price {
+                            width: 200px;
+                            height: 74px;
+                            padding: 8px;
+                            margin: 18px;
+                            border-radius: 6px;
+                           background-color: #f0f4f7;
+                           .collection-p {
+                                font-size: 12px;
                                 display: flex;
-
+                                justify-content: space-between;
+                                color: #6e84ab;
+                                padding-top: 4px;
                             }
-                            .cprice-img {
-                                width: 15px;
-                                height: 15px;
+                            .collection-e {
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 6px 0;
+                                font-size: 14px;
+                            }
+                            .cprice {
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: space-between;
+                                color: #6e84ab;
+                                .cprice-time {
+                                    display: flex;
+    
+                                }
+                                .cprice-img {
+                                    display: flex;
+                                    width: 15px;
+                                    height: 15px;
+                                }
                             }
                         }
-                    }
-              }
+                    }   
+                }
             }
         }
     }
